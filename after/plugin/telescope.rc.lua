@@ -24,6 +24,7 @@ telescope.setup {
     },
   },
   defaults = {
+    file_ignore_patterns = { "node_modules", ".git", ".DS_Store" },
     mappings = {
       n = {
         ["q"] = actions.close

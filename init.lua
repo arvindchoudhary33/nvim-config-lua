@@ -14,4 +14,4 @@ if is_mac then
   require('macos')
 end
 
-vim.cmd("colorscheme gruvbox-baby")
+vim.cmd("colorscheme neosolarized")
