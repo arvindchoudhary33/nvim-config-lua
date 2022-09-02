@@ -9,10 +9,10 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   -- ColorSchemes ( Themes)
-  -- use {
-  --   'svrana/neosolarized.nvim',
-  --   requires = { 'tjdevries/colorbuddy.nvim' }
-  -- }
+  use {
+    'svrana/neosolarized.nvim',
+    requires = { 'tjdevries/colorbuddy.nvim' }
+  }
   use 'luisiacc/gruvbox-baby'
   use "EdenEast/nightfox.nvim"
   use "yorik1984/newpaper.nvim"
