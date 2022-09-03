@@ -25,7 +25,7 @@ nvimTree.setup({
   },
 })
 
-vim.keymap.set('n', '<leader>g', ':NvimTreeToggle<CR>', {})
+vim.keymap.set('n', '<leader>g', ':NvimTreeToggle<CR>', { silent = true })
 
 vim.api.nvim_create_autocmd("BufEnter", {
   group = vim.api.nvim_create_augroup("NvimTreeClose", { clear = true }),

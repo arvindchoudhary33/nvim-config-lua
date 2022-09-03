@@ -10,7 +10,7 @@ toggleTerm.setup {
   shading_factor = 3,
   start_in_insert = true,
   persist_size = true,
-  direction = 'float', -- other , horizontal, vertical, float
+  direction = 'horizontal', -- other , horizontal, vertical, float
   float_opts = {
     -- The border key is *almost* the same as 'nvim_open_win'
     -- see :h nvim_open_win for details on borders however

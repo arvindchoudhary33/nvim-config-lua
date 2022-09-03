@@ -1,4 +1,6 @@
 local keymap = vim.keymap
+-- No macro recording
+vim.cmd [[map q <Nop>]]
 -- Do not yank with x
 keymap.set('n', 'x', '"_x')
 
@@ -48,6 +50,5 @@ keymap.set('n', '<C-k>', '<C-w>k')
 keymap.set('n', 'tt', ':TransparentToggle<Return>')
 
 
--- Remove highlight after pressing Return
+-- Remove highlight after pressing Esc
 keymap.set('n', '<Esc>', ':noh<Return>', { silent = true })
--- vim.cmd [[nnoremap <Esc> :noh<CR><CR>]]

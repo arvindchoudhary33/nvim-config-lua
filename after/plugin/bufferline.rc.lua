@@ -14,8 +14,11 @@ bufferline.setup({
       {
         filetype = "NvimTree",
         text = function()
-          return vim.fn.getcwd()
+          return "Galaxy Explorer"
         end,
+        -- text = function()
+        --   return vim.fn.getcwd()
+        -- end,
         highlight = "Directory",
         text_align = "left"
       }
@@ -23,7 +26,7 @@ bufferline.setup({
   },
   highlights = {
     separator = {
-      fg = '#B16286',
+      -- fg = '#B16286',
       -- bg = '#282828',
     },
     separator_selected = {

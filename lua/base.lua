@@ -4,6 +4,7 @@ vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
 
+vim.opt.swapfile = false
 vim.opt.mouse = "a"
 vim.wo.number = true
 vim.opt.splitright = true
@@ -35,8 +36,8 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
-  pattern = '*',
-  command = "set nopaste"
+	pattern = '*',
+	command = "set nopaste"
 })
 
 -- Add asterisks in block comments

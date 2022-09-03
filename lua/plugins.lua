@@ -15,8 +15,7 @@ packer.startup(function(use)
   }
   use 'luisiacc/gruvbox-baby'
   use "EdenEast/nightfox.nvim"
-  use "yorik1984/newpaper.nvim"
-
+  use "savq/melange"
   use 'xiyaowong/nvim-transparent'
 
   use 'numToStr/Comment.nvim' -- Commenting ( gc | gb)
@@ -30,10 +29,11 @@ packer.startup(function(use)
   use 'neovim/nvim-lspconfig' -- LSP
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
+  use 'kkharji/lspsaga.nvim' --
 
   use { 'kyazdani42/nvim-tree.lua' } -- nerdTree like
 
-  -- use 'L3MON4D3/LuaSnip'
+  use 'L3MON4D3/LuaSnip'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
