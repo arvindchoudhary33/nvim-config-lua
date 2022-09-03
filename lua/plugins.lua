@@ -49,6 +49,7 @@ packer.startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end,
   })
   use 'akinsho/nvim-bufferline.lua'
+  use 'akinsho/toggleterm.nvim'
 
   use 'lewis6991/gitsigns.nvim'
 
