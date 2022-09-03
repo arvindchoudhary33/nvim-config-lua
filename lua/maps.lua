@@ -39,6 +39,9 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 -- Move between panes ( like from nvim-tree to splits )
 keymap.set('n', '<C-l>', '<C-w>l')
 keymap.set('n', '<C-h>', '<C-w>h')
+keymap.set('n', '<C-j>', '<C-w>j')
+keymap.set('n', '<C-k>', '<C-w>k')
+
 
 
 -- Transparent
@@ -46,4 +49,5 @@ keymap.set('n', 'tt', ':TransparentToggle<Return>')
 
 
 -- Remove highlight after pressing Return
-vim.cmd [[nnoremap <CR> :noh<CR><CR>]]
+keymap.set('n', '<Esc>', ':noh<Return>', { silent = true })
+-- vim.cmd [[nnoremap <Esc> :noh<CR><CR>]]
