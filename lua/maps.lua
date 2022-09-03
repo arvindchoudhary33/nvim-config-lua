@@ -42,4 +42,8 @@ keymap.set('n', '<C-h>', '<C-w>h')
 
 
 -- Transparent
-keymap.set('n', '<C-t>', ':TransparentToggle<Return>')
+keymap.set('n', 'tt', ':TransparentToggle<Return>')
+
+
+-- Remove highlight after pressing Return
+vim.cmd [[nnoremap <CR> :noh<CR><CR>]]
