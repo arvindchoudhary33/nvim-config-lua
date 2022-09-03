@@ -106,6 +106,11 @@ _G.packer_plugins = {
     path = "/Users/a33/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
     url = "https://github.com/luisiacc/gruvbox-baby"
   },
+  ["leaf.nvim"] = {
+    loaded = true,
+    path = "/Users/a33/.local/share/nvim/site/pack/packer/start/leaf.nvim",
+    url = "https://github.com/daschw/leaf.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/a33/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

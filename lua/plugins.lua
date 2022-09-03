@@ -16,7 +16,10 @@ packer.startup(function(use)
   use 'luisiacc/gruvbox-baby'
   use "EdenEast/nightfox.nvim"
   use "savq/melange"
-  use 'xiyaowong/nvim-transparent'
+
+  use "daschw/leaf.nvim"
+
+  use 'xiyaowong/nvim-transparent' -- Transparent bg
 
   use 'numToStr/Comment.nvim' -- Commenting ( gc | gb)
 

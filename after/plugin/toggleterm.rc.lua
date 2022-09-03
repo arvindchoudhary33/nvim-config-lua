@@ -7,10 +7,10 @@ toggleTerm.setup {
   open_mapping = [[<c-\>]],
   shade_filetypes = {},
   shade_terminals = true,
-  shading_factor = 3,
+  shading_factor = 1,
   start_in_insert = true,
   persist_size = true,
-  direction = 'horizontal', -- other , horizontal, vertical, float
+  direction = 'float', -- other , horizontal, vertical, float, tab ( tab not very efficient)
   float_opts = {
     -- The border key is *almost* the same as 'nvim_open_win'
     -- see :h nvim_open_win for details on borders however
@@ -21,10 +21,26 @@ toggleTerm.setup {
     -- width = <value>,
     -- height = <value>,
     -- winblend = 3,
-    border = 'double',
+    border = 'curved',
     width = 50,
     height = 30,
-  }
+  },
+  highlights = {
+    -- highlights which map to a highlight group name and a table of it's values
+    -- NOTE: this is only a subset of values, any group placed here will be set for the terminal window split
+    Normal = {
+      -- guibg = "<VALUE-HERE>",
+    },
+    NormalFloat = {
+      link = 'Normal'
+    },
+    FloatBorder = {
+
+      guifg = '#EBC06D',
+      -- guibg = '#EBC06D',
+    },
+  },
+
 }
 
 
