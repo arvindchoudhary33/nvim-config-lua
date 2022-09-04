@@ -9,14 +9,9 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   -- ColorSchemes ( Themes)
-  use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
-  }
   use 'luisiacc/gruvbox-baby'
   use "EdenEast/nightfox.nvim"
   use "savq/melange"
-
   use "daschw/leaf.nvim"
 
   use 'xiyaowong/nvim-transparent' -- Transparent bg

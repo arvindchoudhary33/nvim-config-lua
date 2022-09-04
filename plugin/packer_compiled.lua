@@ -91,11 +91,6 @@ _G.packer_plugins = {
     path = "/Users/a33/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["colorbuddy.nvim"] = {
-    loaded = true,
-    path = "/Users/a33/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
-    url = "https://github.com/tjdevries/colorbuddy.nvim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/a33/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -135,11 +130,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/a33/.local/share/nvim/site/pack/packer/start/melange",
     url = "https://github.com/savq/melange"
-  },
-  ["neosolarized.nvim"] = {
-    loaded = true,
-    path = "/Users/a33/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
-    url = "https://github.com/svrana/neosolarized.nvim"
   },
   ["nightfox.nvim"] = {
     loaded = true,
