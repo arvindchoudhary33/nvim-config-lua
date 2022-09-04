@@ -17,11 +17,11 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 -- New tab
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
 -- Split window
-keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
+keymap.set('n', 'ss', ':split<Return>', { silent = true })
+keymap.set('n', 'sv', ':vsplit<Return>', { silent = true })
 
 --Move window
-keymap.set('n', '<Space>', '<C-w>w') -- move to next split
+-- keymap.set('n', '<Space>', '<C-w>w') -- move to next split
 keymap.set('', 's<left>', '<C-w>h')
 keymap.set('', 's<up>', '<C-w>k')
 keymap.set('', 's<down>', '<C-w>j')
@@ -32,8 +32,12 @@ keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
 -- Reszie window
-keymap.set('n', '<C-w><left>', '<C-w><')
-keymap.set('n', '<C-w><right>', '<C-w>>')
+keymap.set('n', '<Space>', '<C-w>')
+keymap.set('n', '<Space><Space>', '<C-w>=')
+keymap.set('n', 'rr', '<C-w>5<')
+keymap.set('n', 'ww', '<C-w>5>')
+-- keymap.set('n', '<C-w><left>', '<C-w><')
+-- keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
