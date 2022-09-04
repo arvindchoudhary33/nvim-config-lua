@@ -22,8 +22,8 @@ toggleTerm.setup {
     -- height = <value>,
     -- winblend = 3,
     border = 'curved',
-    width = 50,
-    height = 30,
+    -- width = 50,
+    -- height = 30,
   },
   highlights = {
     -- highlights which map to a highlight group name and a table of it's values
