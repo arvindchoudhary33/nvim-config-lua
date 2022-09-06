@@ -34,8 +34,6 @@ keymap.set('', 'sl', '<C-w>l')
 -- Reszie window
 keymap.set('n', '<Space>', '<C-w>')
 keymap.set('n', '<Space><Space>', '<C-w>=')
-keymap.set('n', 'rr', '<C-w>5<')
-keymap.set('n', 'ww', '<C-w>5>')
 -- keymap.set('n', '<C-w><left>', '<C-w><')
 -- keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
@@ -52,7 +50,7 @@ keymap.set('n', '<C-k>', '<C-w>k')
 
 
 -- Transparent
-keymap.set('n', 'tt', ':TransparentToggle<Return>')
+keymap.set('n', 'tt', ':TransparentToggle<Return>', { silent = true })
 
 
 -- Remove highlight after pressing Esc
