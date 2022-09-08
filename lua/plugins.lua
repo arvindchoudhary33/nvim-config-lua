@@ -17,6 +17,7 @@ packer.startup(function(use)
   use 'xiyaowong/nvim-transparent' -- Transparent bg
 
   use 'numToStr/Comment.nvim' -- Commenting ( gc | gb)
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'nvim-lua/plenary.nvim' -- Common utilities
