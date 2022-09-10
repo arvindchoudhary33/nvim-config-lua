@@ -21,6 +21,8 @@ nvimTree.setup({
         -- Backspace or 'o' to close the opened node
         { key = "<BS>", action = "close_node" },
         { key = { "cd" }, action = "cd" },
+        { key = "I", action = "toggle_dotfiles" },
+        { key = "p", action = "parent_node" },
       },
     },
   },
