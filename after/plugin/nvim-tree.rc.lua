@@ -23,6 +23,7 @@ nvimTree.setup({
         { key = { "cd" }, action = "cd" },
         { key = "I", action = "toggle_dotfiles" },
         { key = "p", action = "parent_node" },
+        { key = "R", action = "refresh" },
       },
     },
   },

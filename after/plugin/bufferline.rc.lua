@@ -14,8 +14,8 @@ bufferline.setup({
     color_icons = true,
     indicator = {
       -- icon = '▎',
-      -- icon = " 》",
-      icon = " 〉",
+      icon = " 》",
+      --[[ icon = " 〉", ]]
       -- icon = '', -- this should be omitted if indicator style is not 'icon'
       style = 'icon', -- 'icon' | 'underline' | 'none',
     },
