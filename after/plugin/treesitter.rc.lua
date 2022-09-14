@@ -19,7 +19,7 @@ ts.setup {
     "scss"
   },
   autotag = {
-    enable = true,
+    enable = false,
   },
   context_commentstring = {
     enable = true,

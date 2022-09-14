@@ -5,8 +5,10 @@ lualine.setup {
   options = {
     icons_enabled = true,
     theme = 'gruvbox-baby',
-    section_separators = { left = '', right = '' },
-    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
+    --[[ section_separators = { left = '', right = '' }, ]]
+    --[[ component_separators = { left = '', right = '' }, ]]
     disabled_filetypes = { 'packer', 'NvimTree' }
   },
   sections = {
