@@ -1,14 +1,15 @@
+--[[ section_separators = { left = '', right = '' }, ]]
+--[[ component_separators = { left = '', right = '' }, ]]
+
 local status, lualine = pcall(require, "lualine")
 if (not status) then return end
 
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = 'gruvbox-baby',
+    theme = 'leaf',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
-    --[[ section_separators = { left = '', right = '' }, ]]
-    --[[ component_separators = { left = '', right = '' }, ]]
     disabled_filetypes = { 'packer', 'NvimTree' }
   },
   sections = {
@@ -22,7 +23,7 @@ lualine.setup {
     lualine_x = {
       { 'diagnostics', sources = { "nvim_diagnostic" }, symbols = { error = ' ', warn = ' ', info = ' ',
         hint = ' ' } },
-      'encoding',
+      --[[ 'encoding', ]]
       'filetype'
     },
     lualine_y = { 'progress' },
