@@ -3,7 +3,8 @@ if (not status) then return end
 local formatting = null_ls.builtins.formatting
 local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
 
-null_ls.setup {
+null_ls.setup({
+  debug = false,
   sources = {
     formatting.prettier,
     null_ls.builtins.diagnostics.eslint_d.with({
@@ -21,4 +22,4 @@ null_ls.setup {
       })
     end
   end,
-}
+})

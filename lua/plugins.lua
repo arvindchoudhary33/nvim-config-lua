@@ -10,9 +10,13 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   -- ColorSchemes ( Themes)
   use 'luisiacc/gruvbox-baby'
-  use "EdenEast/nightfox.nvim"
   use "savq/melange"
-  use "daschw/leaf.nvim"
+  use "rebelot/kanagawa.nvim"
+  use 'folke/tokyonight.nvim'
+
+
+  use "lukas-reineke/indent-blankline.nvim"
+
 
   use 'xiyaowong/nvim-transparent' -- Transparent bg
 
