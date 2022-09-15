@@ -15,7 +15,7 @@ packer.startup(function(use)
   use 'folke/tokyonight.nvim'
 
 
-  use "lukas-reineke/indent-blankline.nvim"
+  --[[ use "lukas-reineke/indent-blankline.nvim" ]]
 
 
   use 'xiyaowong/nvim-transparent' -- Transparent bg

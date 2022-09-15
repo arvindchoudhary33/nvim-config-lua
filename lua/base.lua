@@ -3,6 +3,9 @@ vim.cmd('autocmd!')
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
+-- For appending end of line char
+vim.opt.list = true
+vim.opt.listchars:append "eol:↴"
 
 vim.opt.swapfile = false
 vim.opt.mouse = "a"
@@ -26,7 +29,7 @@ vim.opt.ignorecase = true
 vim.opt.smarttab = true
 vim.opt.breakindent = true
 vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+vim.opt.tabstop = 4
 vim.opt.ai = true -- Auto indent
 vim.opt.si = true -- Smart indent
 vim.opt.wrap = false -- No wrap lines
@@ -36,8 +39,8 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
-	pattern = '*',
-	command = "set nopaste"
+  pattern = '*',
+  command = "set nopaste"
 })
 
 -- Add asterisks in block comments
