@@ -18,6 +18,9 @@ packer.startup(function(use)
   --[[ use "lukas-reineke/indent-blankline.nvim" ]]
 
 
+  use "williamboman/nvim-lsp-installer" -- Lsp server installer
+
+
   use 'xiyaowong/nvim-transparent' -- Transparent bg
 
   use 'numToStr/Comment.nvim' -- Commenting ( gc | gb)
@@ -32,7 +35,7 @@ packer.startup(function(use)
   use 'neovim/nvim-lspconfig' -- LSP
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
-  use 'kkharji/lspsaga.nvim' --
+  use 'kkharji/lspsaga.nvim'
 
   use { 'kyazdani42/nvim-tree.lua' } -- nerdTree like
 

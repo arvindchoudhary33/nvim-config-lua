@@ -2,7 +2,13 @@ local status, nvim_lsp = pcall(require, 'lspconfig')
 if (not status) then return end
 
 local protocol = require('vim.lsp.protocol')
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+--[[ Neovim does not currently include built-in snippets. 
+vscode-css-language-server only provides completions when snippet support is enabled.
+To enable completion, install a snippet plugin and add the following override to your 
+language client capabilities during setup ]]
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 local on_attach = function(client, bufnr)
   -- formating
   if client.server_capabilities.documentFormattingProvider then
@@ -13,9 +19,14 @@ local on_attach = function(client, bufnr)
   end
 end
 
+nvim_lsp.cssls.setup {
+  capabilities = capabilities
+}
+
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
-  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx",
+  },
   cmd = { "typescript-language-server", "--stdio" }
 }
 

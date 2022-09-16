@@ -12,7 +12,7 @@ nvimTree.setup({
   view = {
     adaptive_size = true,
     hide_root_folder = false,
-    width = 60,
+    width = 47,
     mappings = {
       list = {
         { key = "l", action = "dir_down" },
