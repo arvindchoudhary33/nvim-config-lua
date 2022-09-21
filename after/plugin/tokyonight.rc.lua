@@ -1,3 +1,5 @@
+--[[
+--
 require("tokyonight").setup({
   style = "night", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
   transparent = false, -- Enable this to disable setting the background color
@@ -30,3 +32,5 @@ require("tokyonight").setup({
   ---@param colors ColorScheme
   on_highlights = function(highlights, colors) end,
 })
+
+--]]

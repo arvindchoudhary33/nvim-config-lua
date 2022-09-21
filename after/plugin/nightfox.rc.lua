@@ -1,3 +1,5 @@
+--[[
+--
 local status, nightFox = pcall(require, 'nightfox')
 if (not status) then return end
 nightFox.setup({
@@ -36,3 +38,5 @@ nightFox.setup({
 
 -- setup must be called before loading
 -- vim.cmd("colorscheme nightfox")
+--
+--]]

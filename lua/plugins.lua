@@ -26,7 +26,7 @@ packer.startup(function(use)
   use 'numToStr/Comment.nvim' -- Commenting ( gc | gb)
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
-  use 'nvim-lualine/lualine.nvim' -- Statusline
+  --[[ use 'nvim-lualine/lualine.nvim' -- Statusline ]]
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words

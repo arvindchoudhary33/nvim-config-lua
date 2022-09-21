@@ -36,7 +36,7 @@ null_ls.setup {
   debug = false,
   sources = {
     formatting.prettier,
-    null_ls.builtins.code_actions.eslint_d,
+    --[[ null_ls.builtins.code_actions.eslint, ]]
     null_ls.builtins.diagnostics.zsh
   },
   on_attach = function(client, bufnr)
