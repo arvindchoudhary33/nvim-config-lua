@@ -1,3 +1,4 @@
+
 local status, packer = pcall(require, "packer")
 if (not status) then
   print("Packer is not installed")
@@ -13,6 +14,7 @@ packer.startup(function(use)
   use "savq/melange"
   use "rebelot/kanagawa.nvim"
   use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
 
   --[[ use "lukas-reineke/indent-blankline.nvim" ]]
