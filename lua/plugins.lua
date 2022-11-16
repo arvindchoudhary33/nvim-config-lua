@@ -1,4 +1,3 @@
-
 local status, packer = pcall(require, "packer")
 if (not status) then
   print("Packer is not installed")
@@ -46,6 +45,8 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
   }
+  -- Highlight todo fix et cetera
+  use "folke/todo-comments.nvim"
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use { 'nvim-telescope/telescope.nvim' }
   use 'nvim-telescope/telescope-file-browser.nvim'
