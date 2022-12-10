@@ -22,6 +22,7 @@ end
 nvim_lsp.cssls.setup {
   capabilities = capabilities
 }
+--[[ LspInstallInfo ]]
 
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
