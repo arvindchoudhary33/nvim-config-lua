@@ -1,5 +1,5 @@
 local status, kanagawaTheme = pcall(require, 'kanagawa')
-local hlgroups              = require('kanagawa.hlgroups')
+--[[ local hlgroups              = require('kanagawa.hlgroups') ]]
 
 if (not status) then return end
 local colors = require('kanagawa.color')
@@ -8,7 +8,7 @@ local config = require("kanagawa").config
 
 -- to have transparent telescope borders
 local overrides = {
-  TelescopeNormal = { bg = not config.transparent and colors.bg or 'NONE' },
+  --[[ TelescopeNormal = { bg = not config.transparent and colors.bg or 'NONE' }, ]]
   TelescopeBorder = { fg = not config.transparent and colors.sm or colors.fg_comment,
     bg = not config.transparent and colors.bg or 'NONE' },
   --[[ TelescopeResultsClass = { link = "TSType" }, ]]

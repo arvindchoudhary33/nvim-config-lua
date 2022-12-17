@@ -1,10 +1,10 @@
 local status, nvimTree = pcall(require, 'nvim-tree')
 if (not status) then return end
 
-
 nvimTree.setup({
   -- Disable all keybindings for nvim-tree because using telescope file-browser to do the same
   remove_keymaps = true,
+
   sort_by = "case_sensitive",
   sync_root_with_cwd = true,
   open_on_tab = true,

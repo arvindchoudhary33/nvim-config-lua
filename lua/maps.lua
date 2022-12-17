@@ -55,3 +55,10 @@ keymap.set('n', 'tt', ':TransparentToggle<Return>', { silent = true })
 
 -- Remove highlight after pressing Esc
 keymap.set('n', '<Esc>', ':noh<Return>', { silent = true })
+
+
+
+-- Best maps ( copy to system clipboard )
+keymap.set('n', "<Space>y", "\"+y")
+keymap.set('v', "<Space>y", "\"+y")
+keymap.set('n', "<Space>Y", "\"+y")
