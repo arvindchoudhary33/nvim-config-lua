@@ -1,4 +1,3 @@
---[[
 --
 require("tokyonight").setup({
   style = "night", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
@@ -33,4 +32,4 @@ require("tokyonight").setup({
   on_highlights = function(highlights, colors) end,
 })
 
---]]
+--
