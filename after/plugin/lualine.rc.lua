@@ -1,4 +1,3 @@
---[[
 local status, lualine = pcall(require, "lualine")
 if (not status) then return end
 
@@ -21,7 +20,7 @@ lualine.setup {
     lualine_x = {
       { 'diagnostics', sources = { "nvim_diagnostic" }, symbols = { error = ' ', warn = ' ', info = ' ',
         hint = ' ' } },
-   --   'encoding',
+      --   'encoding',
       'filetype'
     },
     lualine_y = { 'progress' },
@@ -42,4 +41,3 @@ lualine.setup {
   tabline = {},
   extensions = { 'fugitive' }
 }
-]]

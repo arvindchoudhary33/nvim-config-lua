@@ -124,10 +124,10 @@ _G.packer_plugins = {
     path = "/Users/a33/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/kkharji/lspsaga.nvim"
   },
-  ["markdown-preview.nvim"] = {
+  ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/a33/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
-    url = "https://github.com/iamcco/markdown-preview.nvim"
+    path = "/Users/a33/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualifalsene/lualine.nvim"
   },
   melange = {
     loaded = true,
@@ -223,6 +223,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/a33/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["todo-comments.nvim"] = {
+    loaded = true,
+    path = "/Users/a33/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
   },
   ["toggleterm.nvim"] = {
     loaded = true,
