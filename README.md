@@ -11,10 +11,11 @@
 
 **What you see in screenshots ?.**
 
-- Font ~ Hack Nerd Font Mono
-- ColorScheme ~ Melange
+- Font ~ IBM Plex Mono
+- Icon font ~ Hack Nerd Font Mono
+- ColorScheme ~ Catppuccin(frappe)
 - BG ~ Of Monsters and Men
-- Plugins in use ~ NvimTree, Telescope, Bufferline, LSP Diagnostic ( Lspsaga ), NvimTransparent.
+- Plugins in use ~ NvimTree, Telescope, Bufferline, LSP Diagnostic ( Lspsaga ), NvimTransparent, TermToggle.
 
 **Special Mention** [craftzdog](https://github.com/craftzdog) for step by step setup to neovim in lua
 

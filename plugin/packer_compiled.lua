@@ -127,7 +127,7 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/a33/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualifalsene/lualine.nvim"
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   melange = {
     loaded = true,
