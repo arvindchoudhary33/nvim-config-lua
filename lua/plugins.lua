@@ -14,10 +14,11 @@ packer.startup(function(use)
   use "rebelot/kanagawa.nvim"
   use 'folke/tokyonight.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
-
-
   --[[ use "lukas-reineke/indent-blankline.nvim" ]]
 
+  --[[ git diff view ]]
+  ---- Packer
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   use "williamboman/nvim-lsp-installer" -- Lsp server installer
 
