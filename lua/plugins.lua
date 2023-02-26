@@ -1,14 +1,3 @@
---[[ local status, packer = pcall(require, "packer") ]]
---[[ if (not status) then ]]
---[[   print("Packer is not installed") ]]
---[[   return ]]
---[[ end ]]
---[[]]
---[[ --[[ vim.cmd [[packadd packer.nvim]]
-
---[[ packer.startup(function(use) ]]
---#region
---#region
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -16,11 +5,14 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable",
+    "--branch=stable", -- latest stable release
     lazypath,
   })
 end
 vim.opt.rtp:prepend(lazypath)
+
+vim.g.leader = ' '
+vim.g.maplocalleader = ' '
 
 local plugins = {
   'wbthomason/packer.nvim',
@@ -29,8 +21,8 @@ local plugins = {
   "savq/melange",
   "rebelot/kanagawa.nvim",
   'folke/tokyonight.nvim',
-  { "catppuccin/nvim", as = "catppuccin" },
-  --[[ use "lukas-reineke/indent-blankline.nvim" ]]
+  { "catppuccin/nvim", name = "catppuccin" },
+  "lukas-reineke/indent-blankline.nvim",
 
   --[[ git diff view ]]
   ---- Packer
@@ -38,6 +30,7 @@ local plugins = {
 
   "williamboman/nvim-lsp-installer", -- Lsp server installer
 
+  "folke/neodev.nvim",
 
   "xiyaowong/nvim-transparent", -- Transparent bg
 
@@ -60,7 +53,7 @@ local plugins = {
   'L3MON4D3/LuaSnip',
   {
     'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate',
+    build = ':TSUpdate',
   },
   -- Highlight todo fix et cetera,
   "folke/todo-comments.nvim",
