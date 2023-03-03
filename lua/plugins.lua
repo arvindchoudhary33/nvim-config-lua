@@ -21,6 +21,7 @@ local plugins = {
   "savq/melange",
   "rebelot/kanagawa.nvim",
   'folke/tokyonight.nvim',
+  {"briones-gabriel/darcula-solid.nvim", dependencies ={{ "rktjmp/lush.nvim"}}},
   { "catppuccin/nvim", name = "catppuccin" },
   "lukas-reineke/indent-blankline.nvim",
 

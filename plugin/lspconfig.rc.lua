@@ -31,6 +31,15 @@ nvim_lsp.tsserver.setup {
   cmd = { "typescript-language-server", "--stdio" }
 }
 
+nvim_lsp.pyright.setup{
+  on_attach = on_attach,
+}
+  --[[ local servers = {'pyright'}
+  for _, lsp in ipairs(servers) do
+    nvim_lsp[lsp].setup {
+      on_attach = on_attach,
+    }
+  end ]]
 nvim_lsp.lua_ls.setup {
   on_attach = on_attach,
   settings = {
