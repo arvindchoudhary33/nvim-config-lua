@@ -24,6 +24,7 @@ local plugins = {
   {"briones-gabriel/darcula-solid.nvim", dependencies ={{ "rktjmp/lush.nvim"}}},
   { "catppuccin/nvim", name = "catppuccin" },
   "lukas-reineke/indent-blankline.nvim",
+  "kvrohit/mellow.nvim",
 
   --[[ git diff view ]]
   ---- Packer
