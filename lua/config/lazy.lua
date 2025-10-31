@@ -20,13 +20,13 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "plugins" },
   },
   defaults = {
     lazy = false,
     version = false,
   },
-  { import = "lazyvim.plugins.extras.editor.yanky" },
   checker = {
     enabled = true,
     notify = false,
